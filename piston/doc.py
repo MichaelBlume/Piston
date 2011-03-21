@@ -1,5 +1,6 @@
-import inspect, handler
+import inspect
 
+from piston import handler
 from piston.handler import typemapper
 from piston.handler import handler_tracker
 

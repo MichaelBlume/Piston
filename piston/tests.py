@@ -8,11 +8,11 @@ from django.http import HttpRequest, HttpResponse
 from django.utils import simplejson
 
 # Piston imports
-from test import TestCase
-from models import Consumer
-from handler import BaseHandler
-from utils import rc
-from resource import Resource
+from piston.test import TestCase
+from piston.models import Consumer
+from piston.handler import BaseHandler
+from piston.utils import rc
+from piston.resource import Resource
 
 class ConsumerTest(TestCase):
     fixtures = ['models.json']

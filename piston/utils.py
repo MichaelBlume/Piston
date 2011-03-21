@@ -10,9 +10,7 @@ from django.conf import settings
 from django.utils.translation import ugettext as _
 from django.template import loader, TemplateDoesNotExist
 from django.contrib.sites.models import Site
-from decorator import decorator
-
-from datetime import datetime, timedelta
+from piston.decorator import decorator
 
 __version__ = '0.2.3rc1'
 

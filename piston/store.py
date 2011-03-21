@@ -1,7 +1,7 @@
 import oauth
 
-from models import Nonce, Token, Consumer
-from models import generate_random, VERIFIER_SIZE
+from piston.models import Nonce, Token, Consumer
+from piston.models import generate_random, VERIFIER_SIZE
 
 class DataStore(oauth.OAuthDataStore):
     """Layer between Python OAuth and Django database."""

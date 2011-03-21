@@ -2,7 +2,7 @@
 import django.dispatch 
 
 # Piston imports
-from utils import send_consumer_mail
+from piston.utils import send_consumer_mail
 
 def consumer_post_save(sender, instance, created, **kwargs):
     send_consumer_mail(instance)

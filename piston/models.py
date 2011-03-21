@@ -7,8 +7,8 @@ from django.contrib.auth.models import User
 from django.core.mail import send_mail, mail_admins
 
 # Piston imports
-from managers import TokenManager, ConsumerManager, ResourceManager
-from signals import consumer_post_save, consumer_post_delete
+from piston.managers import TokenManager, ConsumerManager
+from piston.signals import consumer_post_save, consumer_post_delete
 
 KEY_SIZE = 18
 SECRET_SIZE = 32
