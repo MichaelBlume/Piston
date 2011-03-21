@@ -286,6 +286,9 @@ class Resource(object):
         Override this method to add handling of errors customized for your 
         needs
         """
+        if settings.DEBUG:
+            raise
+
         if isinstance(e, FormValidationError):
             return self.form_validation_response(e)
 
