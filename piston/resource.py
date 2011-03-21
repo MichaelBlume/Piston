@@ -222,8 +222,10 @@ class Resource(object):
             before sending it to the client. Won't matter for
             smaller datasets, but larger will have an impact.
             """
-            if self.stream: stream = srl.stream_render(request)
-            else: stream = srl.render(request)
+            if self.stream:
+                stream = srl.stream_render(request)
+            else:
+                stream = srl.render(request)
 
             if not isinstance(stream, HttpResponse):
                 resp = HttpResponse(stream, mimetype=ct, status=status_code)

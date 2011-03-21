@@ -289,13 +289,17 @@ class Emitter(object):
                         pass
 
             if hasattr(data, 'get_api_url') and 'resource_uri' not in ret:
-                try: ret['resource_uri'] = data.get_api_url()
-                except: pass
+                try:
+                    ret['resource_uri'] = data.get_api_url()
+                except:
+                    pass
 
             # absolute uri
             if hasattr(data, 'get_absolute_url') and get_absolute_uri:
-                try: ret['absolute_uri'] = data.get_absolute_url()
-                except: pass
+                try:
+                    ret['absolute_uri'] = data.get_absolute_url()
+                except:
+                    pass
 
             return ret
 
