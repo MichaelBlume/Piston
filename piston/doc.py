@@ -181,7 +181,7 @@ def documentation_view(request):
     """
     docs = [ ]
 
-    for handler in handler_tracker: 
+    for handler in handler_tracker:
         docs.append(generate_doc(handler))
 
     def _compare(doc1, doc2):
@@ -192,5 +192,5 @@ def documentation_view(request):
  
     docs.sort(_compare)
        
-    return render_to_response('documentation.html', 
+    return render_to_response('documentation.html',
         { 'docs': docs }, RequestContext(request))

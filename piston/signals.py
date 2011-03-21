@@ -11,4 +11,3 @@ def consumer_post_delete(sender, instance, **kwargs):
     instance.status = 'canceled'
     send_consumer_mail(instance)
 
-

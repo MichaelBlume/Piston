@@ -77,7 +77,7 @@ class rc_factory(object):
                 else:
                     self._is_string = is_string
 
-            content = property(HttpResponse._get_content, _set_content)            
+            content = property(HttpResponse._get_content, _set_content)
 
         return HttpResponseWrapper(r, content_type='text/plain', status=c)
     

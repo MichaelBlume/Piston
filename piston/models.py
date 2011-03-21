@@ -95,7 +95,7 @@ class Token(models.Model):
 
     def to_string(self, only_key=False):
         token_dict = {
-            'oauth_token': self.key, 
+            'oauth_token': self.key,
             'oauth_token_secret': self.secret,
             'oauth_callback_confirmed': 'true',
         }
