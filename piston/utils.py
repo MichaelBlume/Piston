@@ -1,8 +1,7 @@
 import time
 
 import django
-from django.http import HttpResponseNotAllowed, HttpResponseForbidden, HttpResponse, HttpResponseBadRequest
-from django.core.urlresolvers import reverse
+from django.http import HttpResponse
 from django.core.cache import cache
 from django import get_version as django_version
 from django.core.mail import send_mail, mail_admins

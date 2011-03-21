@@ -4,7 +4,6 @@ import urllib, time, urlparse
 from django.db.models.signals import post_save, post_delete
 from django.db import models
 from django.contrib.auth.models import User
-from django.core.mail import send_mail, mail_admins
 
 # Piston imports
 from piston.managers import TokenManager, ConsumerManager

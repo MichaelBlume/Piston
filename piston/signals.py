@@ -1,6 +1,3 @@
-# Django imports
-import django.dispatch 
-
 # Piston imports
 from piston.utils import send_consumer_mail
 
