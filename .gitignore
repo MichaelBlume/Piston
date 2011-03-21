@@ -1,0 +1,12 @@
+.hg
+*.egg
+*.pyc
+build
+dist
+django_piston.egg-info
+bin
+parts
+downloads
+.installed.cfg
+develop-eggs
+*.swp
