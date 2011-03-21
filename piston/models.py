@@ -121,6 +121,7 @@ class Token(models.Model):
     # -- OAuth 1.0a stuff
 
     def get_callback_url(self):
+        # TODO: refactor this with OAuthToken.get_callback_url()
         if self.callback and self.verifier:
             # Append the oauth_verifier.
             parts = urlparse.urlparse(self.callback)
