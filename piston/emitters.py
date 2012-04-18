@@ -59,9 +59,9 @@ class Emitter(object):
     as the methods on the handler. Issue58 says that's no good.
     """
     EMITTERS = { }
-    RESERVED_FIELDS = set([ 'read', 'update', 'create',
+    RESERVED_FIELDS = set(( 'read', 'update', 'create',
                             'delete', 'model', 'anonymous',
-                            'allowed_methods', 'fields', 'exclude' ])
+                            'allowed_methods', 'fields', 'exclude' ))
 
     def __init__(self, payload, typemapper, handler, fields=(), anonymous=True):
         self.typemapper = typemapper
